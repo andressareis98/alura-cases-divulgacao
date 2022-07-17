@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from "../src/components/Link";
+import PageTitle from "../src/components/PageTitle";
 
 export async function getStaticProps() {
     const FAQ_API_URL =
@@ -22,9 +23,7 @@ export async function getStaticProps() {
 export default function FaqPage({ faq }) {
   return (
     <div>
-      <Head>
-        <title>FAQ - Alura Cases</title>
-      </Head>
+      <PageTitle>FAQ - Alura Cases Campanha</PageTitle>
       <h1>Alura Cases - Página de Perguntas FAQ</h1>
       <Link href="/">Ir para home</Link>
       <ul>
